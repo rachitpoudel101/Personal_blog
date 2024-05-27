@@ -6,3 +6,7 @@ class Projects(models.Model):
     discription = models.CharField(max_length=250)
     image = models.ImageField(upload_to='portfolio/images/')
     url = models.URLField(blank=True)
+
+
+def __str__(self):
+    return self.title
